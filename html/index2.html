@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/home/bridgeit/Desktop/htmlpractise/TUDUAPP/css/sty.css">
+  <script src="/home/bridgeit/Desktop/htmlpractise/TUDUAPP/js/script.js"></script>
+</head>
+<body>
+  <form id="contactForm" action="contact.php" method="POST">
+<div class="blue-bg-nav">
+<div class="container">
+    <div class="row">
+		<div class="col-md-12">
+			<header class="header-tp">
+		<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+	  <div class="navbar-header">
+  	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+
+		  </div>
+			<div id="navbar" class="navbar-collapse collapse">
+		<form class="form-inline">
+
+<a  href="#" class="btn-blu mrgn-top" data-toggle="modal" data-target="#at-helping">Home</a>
+<ul class="nav navbar-nav navbar-right bdr">
+<li><a href="#" data-toggle="modal" data-target="#at-login">Sign in</a></li>
+<li ><a href="#" data-toggle="modal" data-target="#at-signup">Sign Up</a></li>
+	</ul>
+	</form>
+</div><nav-collapse>
+								</div>
+							</nav>
+						</header>
+            <section class="at-login-form">
+              <!-- MODAL LOGIN -->
+              <div class="modal fade" id="at-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+              <div class="modal-content">
+              <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <!-- <div class="modal-body">
+                      <button class="btn-fb"> <i class="fa fa-fw fa-facebook pull-left" aria-hidden="true"></i>
+                        Login with Facebook	</button> <br>
+                        <button class="btn-gp"> <i class="fa fa-fw fa-google-plus pull-left" aria-hidden="true"></i>
+                          Login with Google	</button> <br>
+                          <div class="signup-or-separator">
+                            <span class="h6 signup-or-separatortext">or</span>
+                            <hr>
+                          </div> -->
+                          <form>
+                              <div class="form-group">
+                  <input type="text" class="form-control-form " id="fname" placeholder="enter the first name">
+                            </div>
+
+                            <div class="form-group">
+                          <input type="text" class="form-control-form " id="lname" placeholder="enter the Last name">
+                          </div>
+
+                            <div class="form-group">
+
+                              <input type="text" class="form-control-form " id="exampleInputEmaillog" placeholder="UserName">
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <input type="date" class="form-control-form " id="dateentry" >
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox"> Remember me
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-md-offset-2">
+                                <p class="frgt-pswd"   data-toggle="modal" data-dismiss="modal"  data-target="#at-reset-pswd">	Forgot Password ?</p>
+                              </div>
+                            </div>
+                            <button type="button" onclick="userObj()" class="btn-lgin">Register</button>
+                            <button type="reset"  class="btn-lgin">reset</button>
+                          </form>
+
+                        <div class="modal-footer">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p class="ta-l">Don't have an account ? </p>
+                            </div>
+                            <div class="col-md-4 col-md-offset-2">
+                              <button class="btn-gst"  data-toggle="modal"  data-dismiss="modal" data-target="#at-signup" >Sign Up </button>
+                            </div>
+
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- MODAL SIGNUP -->
+        <div class="modal fade" id="at-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+                         <!-- <div class="modal-body">
+                          <button class="btn-fb"> <i class="fa fa-fw fa-facebook pull-left" aria-hidden="true"></i>
+                            Signup with Facebook	</button> <br>
+                            <button class="btn-gp"> <i class="fa fa-fw fa-google-plus pull-left" aria-hidden="true"></i>
+                              Signup with Google	</button> <br>
+                              <div class="signup-or-separator">
+                                <span class="h6 signup-or-separatortext"></span>
+                                <hr>
+                              </div> -->
+                                  <form>
+                              <div class="form-group">
+
+                        <input type="text" class="form-control-form " id="exampleInputEmaillog" placeholder="UserName">
+                          </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+                        </div>
+          <button type="button" onclick="fetchUser()"  class="btn-lgin" data-toggle="modal"  data-dismiss="modal" data-target="#at-signup-filling">Signup </button> <hr>
+                          <p>By signing up, I agree to Airbnb’s , Payments <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a>, <a href="#">Guest Refund Policy</a>, and <a href="#">Host Guarantee Terms</a>. </p>
+                        </div>
+                        <div class="modal-footer">
+                        <div class="row">
+                          <div class="col-md-6">
+                          <button type="submit" class="btn-lgin" data-toggle="modal"  data-dismiss="modal" data-target="#at-signup-filling">Already a Member? </button>
+                          </div>
+                      <div class="col-md-4 col-md-offset-2">
+                    <button class="btn-gst"  data-toggle="modal"  data-dismiss="modal" data-target="#at-login">Login</button>
+                                </div>
+                              </div>
+                            <!-- </div>
+                          </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                </body>
+            </html>
